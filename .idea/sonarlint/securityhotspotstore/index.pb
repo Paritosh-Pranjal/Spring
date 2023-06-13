@@ -11,8 +11,6 @@ j
 :src/main/java/com/code/springdemo/HappyFortuneService.java,6\5\65bfd9af3bb8eea7038a13068c63ac7fa8ed975f
 O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
-I
-src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
 d
 4src/main/java/com/code/springdemo/BaseballCoach.java,d\4\d45d24f002217f01745a483e8f6efaca02cfb92f
 \
