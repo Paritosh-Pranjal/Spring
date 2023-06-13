@@ -1,0 +1,29 @@
+
+Bcom.code.springdemo.TrackCoach#getDailyFortune()Ljava/lang/String;d
+ZC:/Users/parit/IdeaProjects/SpringSample/src/main/java/com/code/springdemo/TrackCoach.java (!"1*ü
+1 (‘
+Ž
+ (,(
+%0"com.code.springdemo.FortuneService"__id*R
+
+__unknown_file (6*4 
+com.code.springdemo.TrackCoach"
+fortuneService¾»
+ (9
+%1java.lang.String"Acom.code.springdemo.FortuneService#getFortune()Ljava/lang/String;*F
+
+__unknown_file (*
+(
+%0"com.code.springdemo.FortuneService2getFortune()r
+p
+ (9
+%2java.lang.String"__concat*
+ (
+Just Do It: *$
+ (9
+
+%1java.lang.String"$
+ (:
+
+%2java.lang.StringB" 
+com.code.springdemo.TrackCoachH

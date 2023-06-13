@@ -1,0 +1,3 @@
+com.code.springdemo.beanlifecycle.Test#main([Ljava/lang/String;)V
+org.springframework.context.support.ClassPathXmlApplicationContext#<init>(Ljava/lang/String;)V
+org.springframework.context.support.ClassPathXmlApplicationContext#instance-init#
