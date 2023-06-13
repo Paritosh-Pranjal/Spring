@@ -10,7 +10,7 @@ public class Car  {
     }
 
     public void setPrice(double price) {
-        System.out.println("Setting properties");
+        logger.info("Setting properties");
         this.price = price;
     }
 
