@@ -1,8 +1,12 @@
 package com.code.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class BeanLifeCycleDemoApp {
+
+    static final Logger logger = LoggerFactory.getLogger(BeanLifeCycleDemoApp.class);
     public static void main(String[] args) {
 
      // load the spring configuration file
@@ -12,8 +16,7 @@ public class BeanLifeCycleDemoApp {
      // retrieve bean from spring container
         Coach theCoach = context.getBean("myCoach" , Coach.class);
 
-        System.out.println(theCoach.getDailyWorkout());
-
+        logger.error(theCoach.getDailyWorkout());
 
         // close the context
         context.close();

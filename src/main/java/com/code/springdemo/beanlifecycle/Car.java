@@ -1,6 +1,8 @@
 package com.code.springdemo.beanlifecycle;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class Car  {
+    static final Logger logger = LoggerFactory.getLogger(Car.class);
     private  double price;
 
     public double getPrice() {
@@ -25,11 +27,11 @@ public class Car  {
 
     public void init()
     {
-        System.out.println("Inside the init method");
+        logger.info("Inside the init method");
     }
 
     public void destroy()
     {
-        System.out.println("Inside the destroy method");
+        logger.info("Inside the destroy method");
     }
 }

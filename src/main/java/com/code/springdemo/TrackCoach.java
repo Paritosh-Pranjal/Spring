@@ -1,9 +1,10 @@
 package com.code.springdemo;
 
-import javax.sound.midi.Track;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TrackCoach implements Coach {
-
+    static final Logger logger = LoggerFactory.getLogger(TrackCoach.class);
     private  FortuneService fortuneService;
 
     public TrackCoach() {
@@ -27,12 +28,12 @@ public class TrackCoach implements Coach {
 
     // add an init method
     public void doMyStartupStuff(){
-        System.out.println("TrackCoach: inside method doMyStartupStuff");
+        logger.info("TrackCoach: inside method doMyStartupStuff");
     }
 
     // add a destory method
     public void doMyCleanupStuff(){
-        System.out.println("TrackCoach: inside method doMyCleanupStuff");
+        logger.info("TrackCoach: inside method doMyCleanupStuff");
     }
 
 

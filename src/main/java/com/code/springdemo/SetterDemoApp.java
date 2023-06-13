@@ -1,8 +1,10 @@
 package com.code.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class SetterDemoApp {
+    static final Logger logger = LoggerFactory.getLogger(SetterDemoApp.class);
     public static void main(String[] args) {
 
         // load the spring configuration file
@@ -13,14 +15,14 @@ public class SetterDemoApp {
         CricketCoach theCoach = context.getBean("myCricketCoach",CricketCoach.class);
 
         // call methods on the beans
-        System.out.println(theCoach.getDailyWorkout());
+        logger.info(theCoach.getDailyWorkout());
 
-        System.out.println(theCoach.getDailyFortune());
+        logger.info(theCoach.getDailyFortune());
 
         // call our new methods to get the literal values or injected values
-        System.out.println(theCoach.getEmailAddress());
+        logger.info(theCoach.getEmailAddress());
 
-        System.out.println(theCoach.getTeam());
+        logger.info(theCoach.getTeam());
 
         // close the context
         context.close();

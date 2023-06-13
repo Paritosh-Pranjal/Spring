@@ -2,8 +2,10 @@ package com.code.springdemo;
 
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class HelloSpringApp {
+    static final Logger logger = LoggerFactory.getLogger(HelloSpringApp.class);
     public static void main(String[] args) {
 
         // create spring container
@@ -17,10 +19,10 @@ public class HelloSpringApp {
 
 
         // call methods on the bean
-        System.out.println(theCoach.getDailyWorkout());
+        logger.info(theCoach.getDailyWorkout());
 
         // let's call our new method for fortune
-        System.out.println(theCoach.getDailyFortune());
+        logger.info(theCoach.getDailyFortune());
 
         // close the context
         context.close();

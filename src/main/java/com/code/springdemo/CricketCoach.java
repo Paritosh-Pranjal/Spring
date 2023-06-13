@@ -1,6 +1,8 @@
 package com.code.springdemo;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class CricketCoach implements Coach{
+    static final Logger logger = LoggerFactory.getLogger(CricketCoach.class);
     private FortuneService fortuneService;
 
     // add new fields for emailAddress and team
@@ -13,7 +15,7 @@ public class CricketCoach implements Coach{
     }
 
     public void setEmailAddress(String emailAddress) {
-        System.out.println("CricketCoach: inside setter method - setEmailAddress");
+       logger.info("CricketCoach: inside setter method - setEmailAddress");
         this.emailAddress = emailAddress;
     }
 
@@ -22,18 +24,18 @@ public class CricketCoach implements Coach{
     }
 
     public void setTeam(String team) {
-        System.out.println("CricketCoach: inside setter method - setTeam");
+        logger.info("CricketCoach: inside setter method - setTeam");
         this.team = team;
     }
 
     // create no-arg constructor
     public CricketCoach(){
-        System.out.println("CricketCoach: inside no-arg constructor");
+        logger.info("CricketCoach: inside no-arg constructor");
     }
 
     // our setter method
     public void setFortuneService(FortuneService fortuneService) {
-        System.out.println("CricketCoach: inside setter method - setFortuneService");
+        logger.info("CricketCoach: inside setter method - setFortuneService");
         this.fortuneService = fortuneService;
     }
 
